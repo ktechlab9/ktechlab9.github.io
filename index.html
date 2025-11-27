@@ -1,126 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartupX – Grow Your Business</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BakeFlow — Recipes & Baking Studio</title>
+  <meta name="description" content="BakeFlow — beautiful step-by-step recipes, timers, and baking guides." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">StartupX</h2>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        </nav>
-    </header>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" aria-hidden class="logo-mark"><path d="M12 2c1.7 0 3.2.9 4 2.3C17.8 4.7 19.5 5 21 5v2c-1.7 0-3.2.9-4 2.3C15.2 10.7 13.5 11 12 11s-3.2-.3-5-1.7C6.2 8.9 4.7 8 3 8V6c1.5 0 3.2-.3 5-1.7C8.8 2.9 10.3 2 12 2z"></path></svg>
+        <span class="brand-text">BakeFlow</span>
+      </div>
 
-    <!-- HERO SECTION -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn small" href="#pricing">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / PROMO -->
+  <main id="main">
     <section id="home" class="hero">
-        <h1>Build & Grow Your Startup with Confidence</h1>
-        <p>We help new businesses launch fast with modern solutions, automation, and expert guidance.</p>
-        <div class="hero-buttons">
-            <a href="#services" class="btn">Get Started</a>
-            <a href="#contact" class="btn-outline">Contact Us</a>
+      <div class="container hero-grid">
+        <div class="hero-content animate-up">
+          <p class="eyebrow">New</p>
+          <h1>BakeFlow — Recipes & Baking Studio</h1>
+          <p class="lead">Beautiful step-by-step guided recipes, smart timers, technique videos, and personalized baking plans — all in one simple app.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#pricing">Start Free</a>
+            <a class="btn ghost" href="#features">See Features</a>
+          </div>
+          <ul class="trust-row" aria-hidden>
+            <li>2000+ recipes</li>
+            <li>Smart timers</li>
+            <li>Chef-verified</li>
+          </ul>
         </div>
+
+        <!-- PRODUCT MOCKUP -->
+        <div class="hero-mockup animate-up delay">
+          <!-- A simple recipe phone mockup using SVG + placeholder content.
+               Replace the rectangle content or swap with an actual PNG named "mockup.png". -->
+          <div class="device">
+            <div class="device-screen">
+              <header class="recipe-top">
+                <div class="avatar"></div>
+                <div class="title-block">
+                  <div class="r-title">Sourdough Starter</div>
+                  <div class="r-sub">45 min • Beginner</div>
+                </div>
+              </header>
+
+              <div class="steps">
+                <div class="step s1"><strong>1.</strong> Mix flour & water — 5 min</div>
+                <div class="step s2"><strong>2.</strong> Rest — 20 min</div>
+                <div class="step s3"><strong>3.</strong> Bake — 20 min</div>
+              </div>
+
+              <div class="mockup-footer">
+                <button class="chip">Start Timer</button>
+                <button class="chip ghost">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Website Development</h3>
-                <p>Create beautiful, responsive websites tailored for your brand.</p>
-            </div>
-            <div class="service-card">
-                <h3>Brand Strategy</h3>
-                <p>We help you build a strong foundation and stand out.</p>
-            </div>
-            <div class="service-card">
-                <h3>Digital Marketing</h3>
-                <p>Grow faster using SEO, social media ads, and automation.</p>
-            </div>
+    <!-- FEATURES -->
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="animate-up">Features designed for bakers</h2>
+        <p class="subtle animate-up delay">From precise timers to technique videos — everything crafted for consistent results.</p>
+
+        <div class="features-grid">
+          <article class="feature-card animate-up">
+            <h3>Guided Steps</h3>
+            <p>Clear, timed steps with progress indicators so you never miss a fold or proof.</p>
+          </article>
+
+          <article class="feature-card animate-up delay">
+            <h3>Smart Timers</h3>
+            <p>Auto-adjusting timers that adapt to your recipe and altitude.</p>
+          </article>
+
+          <article class="feature-card animate-up delay-2">
+            <h3>Technique Videos</h3>
+            <p>Short clips from chefs showing kneading, scoring, and tempering techniques.</p>
+          </article>
+
+          <article class="feature-card animate-up delay-3">
+            <h3>Personalized Plans</h3>
+            <p>Weekly plans and shopping lists tailored to your skill level and schedule.</p>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <!-- RECIPES HIGHLIGHT -->
+    <section id="recipes" class="section recipes">
+      <div class="container">
+        <h2 class="animate-up">Recipes you'll love</h2>
+        <p class="subtle animate-up delay">Hand-curated collections for every occasion.</p>
+
+        <div class="recipe-row">
+          <figure class="recipe-card animate-up">
+            <div class="img-placeholder">🍞</div>
+            <figcaption>
+              <strong>Sourdough Loaf</strong>
+              <span>Beginner • 3 hr</span>
+            </figcaption>
+          </figure>
+
+          <figure class="recipe-card animate-up delay">
+            <div class="img-placeholder">🧁</div>
+            <figcaption>
+              <strong>Vanilla Cupcakes</strong>
+              <span>Easy • 1 hr</span>
+            </figcaption>
+          </figure>
+
+          <figure class="recipe-card animate-up delay-2">
+            <div class="img-placeholder">🥐</div>
+            <figcaption>
+              <strong>Buttery Croissants</strong>
+              <span>Advanced • 2 days</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- PRICING -->
-    <section id="pricing" class="pricing">
-        <h2>Our Pricing</h2>
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2 class="animate-up">Simple pricing</h2>
+        <p class="subtle animate-up delay">Start free. Upgrade for pro features and chef content.</p>
+
         <div class="pricing-grid">
-            <div class="price-card">
-                <h3>Starter</h3>
-                <p class="price">$29/mo</p>
-                <ul>
-                    <li>1 Website</li>
-                    <li>Email Support</li>
-                    <li>Basic Branding</li>
-                </ul>
-                <a href="#" class="btn">Choose Plan</a>
-            </div>
-            <div class="price-card highlight">
-                <h3>Pro</h3>
-                <p class="price">$59/mo</p>
-                <ul>
-                    <li>Everything in Starter</li>
-                    <li>SEO Boost</li>
-                    <li>Priority Support</li>
-                </ul>
-                <a href="#" class="btn">Choose Plan</a>
-            </div>
-            <div class="price-card">
-                <h3>Business</h3>
-                <p class="price">$99/mo</p>
-                <ul>
-                    <li>Full Branding</li>
-                    <li>Marketing Management</li>
-                    <li>Dedicated Support</li>
-                </ul>
-                <a href="#" class="btn">Choose Plan</a>
-            </div>
+          <div class="plan animate-up">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <ul>
+              <li>Access to 2000+ recipes</li>
+              <li>Basic timers</li>
+              <li>Community support</li>
+            </ul>
+            <a class="btn small" href="#contact">Join Free</a>
+          </div>
+
+          <div class="plan highlight animate-up delay">
+            <h3>Pro</h3>
+            <p class="price">$6 / mo</p>
+            <ul>
+              <li>Chef videos</li>
+              <li>Smart timers & personalization</li>
+              <li>Offline mode</li>
+            </ul>
+            <a class="btn small" href="#contact">Start Pro</a>
+          </div>
+
+          <div class="plan animate-up delay-2">
+            <h3>Studio</h3>
+            <p class="price">$18 / mo</p>
+            <ul>
+              <li>Team sharing</li>
+              <li>Priority support</li>
+              <li>Custom lesson plans</li>
+            </ul>
+            <a class="btn small" href="#contact">Get Studio</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="testimonials" class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <p>“StartupX helped us launch our company website within a week. Amazing work!”</p>
-                <h4>– Sarah Williams</h4>
-            </div>
-            <div class="testimonial-card">
-                <p>“Their branding and marketing strategy doubled our revenue in 60 days.”</p>
-                <h4>– Michael Lee</h4>
-            </div>
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="animate-up">Loved by home bakers</h2>
+        <div class="test-row">
+          <blockquote class="test-card animate-up">
+            <p>“BakeFlow finally got my sourdough consistent. The timers are perfect.”</p>
+            <footer>— Priya, Home Baker</footer>
+          </blockquote>
+
+          <blockquote class="test-card animate-up delay">
+            <p>“The technique videos changed how I fold dough. Professional quality.”</p>
+            <footer>— Tomas, Pastry Student</footer>
+          </blockquote>
         </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="animate-up">Get in touch</h2>
+        <p class="subtle animate-up delay">Questions, press, or chef collaborations — we'd love to hear from you.</p>
+
+        <form id="contactForm" class="contact-form animate-up delay-2" novalidate>
+          <div class="form-row">
+            <input name="name" type="text" placeholder="Your name" required />
+            <input name="email" type="email" placeholder="Email" required />
+          </div>
+          <textarea name="message" placeholder="Tell us a bit..." required></textarea>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send message</button>
+            <a class="link" href="mailto:hello@bakeflow.example">Or email: hello@bakeflow.example</a>
+          </div>
+          <p id="formMessage" class="form-msg" aria-live="polite"></p>
         </form>
-        <p id="formMessage"></p>
+      </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 StartupX. All Rights Reserved.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> BakeFlow</div>
+      <nav>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
