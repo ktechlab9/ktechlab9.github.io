@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AARK Innovations - Tech, Blog, Recipes and more">
+  <title>AARK Innovations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-roboto bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#home" class="text-xl font-bold">AARK Innovations</a>
+      <div class="space-x-4">
+        <a href="#tech" class="hover:text-blue-500">Tech</a>
+        <a href="#recipes" class="hover:text-green-500">Recipes</a>
+        <a href="#blog" class="hover:text-purple-500">Blog</a>
+        <a href="#contact" class="hover:text-orange-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-blue-100 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to AARK Innovations</h1>
+    <p class="text-lg md:text-2xl max-w-xl">Explore our tech projects, blog, food recipes, and more—all in one place.</p>
+    <a href="#tech" class="mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Explore</a>
+  </section>
+
+  <!-- Tech Section -->
+  <section id="tech" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Tech & Smart Home</h2>
+      <p class="mb-6">Check out our latest tech projects, smart home innovations, and solutions.</p>
+      <!-- Placeholder cards -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">Smart Home Hub</h3>
+          <p>Manage your home devices easily with our custom hub.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">IoT Sensors</h3>
+          <p>Innovative sensors for home automation and safety.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">Automation Scripts</h3>
+          <p>Simple scripts to make your life easier with technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section id="recipes" class="py-20 bg-green-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Food Recipes</h2>
+      <p class="mb-6">Delicious recipes curated for food lovers.</p>
+      <a href="https://recipes.aarkinnovations.com" class="mt-6 px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600 transition">Visit Recipes</a>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-purple-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Blog & Insights</h2>
+      <p class="mb-6">Read articles, tips, and news about tech, lifestyle, and more.</p>
+      <!-- Example posts -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">Smart Home Trends 2026</h3>
+          <p>Explore the latest trends in home automation technology.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">Top 5 Coffee Recipes</h3>
+          <p>Discover simple recipes to brew coffee like a barista.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="font-bold text-xl mb-2">Tech DIY Projects</h3>
+          <p>Step-by-step guides to create your own tech gadgets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-orange-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+      <p class="mb-6">Reach out for inquiries, collaborations, or questions.</p>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300">
+        <input type="email" placeholder="Email Address" class="w-full p-3 rounded border border-gray-300">
+        <textarea placeholder="Message" class="w-full p-3 rounded border border-gray-300" rows="4"></textarea>
+        <button type="submit" class="px-6 py-3 bg-orange-500 text-white rounded hover:bg-orange-600 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    &copy; 2026 AARK Innovations. All rights reserved.
+  </footer>
+
+</body>
+</html>
